@@ -3,7 +3,7 @@
 A script that defines a class that uses
 A FIFO method
 """
-BaseCaching = __import__('base_catching').BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class FIFOCache(BaseCaching):
