@@ -17,8 +17,6 @@ class BasicCache(BaseCaching):
     def get(self, key):
         """ returns the value in self.cache_data linked to key
         """
-        if key is None:
+        if key is None or not (key in self.cache_data):
             return None
-	if not (key in self.cache_data):
-	    return None
         return self.cache_data[key]
