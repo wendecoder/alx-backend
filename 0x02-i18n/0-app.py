@@ -3,9 +3,12 @@
 A simple Module that implements the /
 route
 """
-from flask import Flask
+from flask import Flask, render_template
 
-app = flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/')
+def index():
+    """A function that displays a basic page"""
+    return render_template('0-index.html')
